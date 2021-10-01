@@ -3,7 +3,7 @@ import re
 from bs4 import BeautifulSoup
 import pandas as pd
 #add headers to avoid access denied
-headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'}
+headers = {'user-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:92.0) Gecko/20100101 Firefox/92.0'}
 r= requests.get("https://www.analytixlabs.co.in/blog/nlp-interview-questions/", headers=headers)
 c= r.content
 #Use beatifulsoup to parse
